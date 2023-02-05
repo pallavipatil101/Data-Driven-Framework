@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-05T13:52:43 IST" name="Default suite" finished-at="2023-02-05T13:53:02 IST" duration-ms="19084">
+    <groups>
+    </groups>
+    <test started-at="2023-02-05T13:52:43 IST" name="Default test" finished-at="2023-02-05T13:53:02 IST" duration-ms="19084">
+      <class name="testcases.Slider_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.Slider_Test@6e0f5f7f]" started-at="2023-02-05T13:52:43 IST" name="setup" finished-at="2023-02-05T13:53:00 IST" duration-ms="16937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="navigate_to_slider()[pri:0, instance:testcases.Slider_Test@6e0f5f7f]" started-at="2023-02-05T13:53:00 IST" name="navigate_to_slider" finished-at="2023-02-05T13:53:01 IST" duration-ms="849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate_to_slider -->
+        <test-method signature="drag_drop_slider()[pri:1, instance:testcases.Slider_Test@6e0f5f7f]" started-at="2023-02-05T13:53:01 IST" name="drag_drop_slider" finished-at="2023-02-05T13:53:02 IST" duration-ms="1034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drag_drop_slider -->
+        <test-method signature="verify_dragdrop_successful()[pri:2, instance:testcases.Slider_Test@6e0f5f7f]" started-at="2023-02-05T13:53:02 IST" name="verify_dragdrop_successful" finished-at="2023-02-05T13:53:02 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_dragdrop_successful -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.Slider_Test@6e0f5f7f]" started-at="2023-02-05T13:53:02 IST" name="teardown" finished-at="2023-02-05T13:53:02 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testcases.Slider_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
