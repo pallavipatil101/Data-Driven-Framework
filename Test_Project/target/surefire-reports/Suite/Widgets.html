@@ -1,0 +1,250 @@
+<html>
+<head>
+<title>TestNG:  Widgets</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Widgets</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>34/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 22 10:29:17 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>25 seconds (25098 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.ToolTips_Test.hover_over_textbox()'><b>hover_over_textbox</b><br>Test class: testcases.ToolTips_Test<br>Test method: Hover curser over textbox</td>
+<td></td>
+<td>0</td>
+<td>testcases.ToolTips_Test@2571066a</td></tr>
+<tr>
+<td title='testcases.Accordian_Test.heading1()'><b>heading1</b><br>Test class: testcases.Accordian_Test<br>Test method: Open heading1 and verify its text</td>
+<td></td>
+<td>0</td>
+<td>testcases.Accordian_Test@1bbae752</td></tr>
+<tr>
+<td title='testcases.ToolTips_Test.hover_over_button()'><b>hover_over_button</b><br>Test class: testcases.ToolTips_Test<br>Test method: Hover curser over button</td>
+<td></td>
+<td>0</td>
+<td>testcases.ToolTips_Test@2571066a</td></tr>
+<tr>
+<td title='testcases.Datepicker_Test.calender2()'><b>calender2</b><br>Test class: testcases.Datepicker_Test<br>Test method: Select birthdate of calender2</td>
+<td></td>
+<td>2</td>
+<td>testcases.Datepicker_Test@383790cf</td></tr>
+<tr>
+<td title='testcases.AutoComplete_Test.navigate_to_autocomplete()'><b>navigate_to_autocomplete</b><br>Test class: testcases.AutoComplete_Test<br>Test method: Navigate to auto complete under Widgets</td>
+<td></td>
+<td>0</td>
+<td>testcases.AutoComplete_Test@76075d65</td></tr>
+<tr>
+<td title='testcases.Datepicker_Test.calender1()'><b>calender1</b><br>Test class: testcases.Datepicker_Test<br>Test method: Select birthdate of calender1</td>
+<td></td>
+<td>0</td>
+<td>testcases.Datepicker_Test@383790cf</td></tr>
+<tr>
+<td title='testcases.SelectMenu_Test.naviagate_to_selectmenu()'><b>naviagate_to_selectmenu</b><br>Test class: testcases.SelectMenu_Test<br>Test method: Navigate to SelectMenu under Widgets</td>
+<td></td>
+<td>0</td>
+<td>testcases.SelectMenu_Test@57540fd0</td></tr>
+<tr>
+<td title='testcases.SelectMenu_Test.select_dropdown()'><b>select_dropdown</b><br>Test class: testcases.SelectMenu_Test<br>Test method: Select Aqua color from dropdown</td>
+<td></td>
+<td>0</td>
+<td>testcases.SelectMenu_Test@57540fd0</td></tr>
+<tr>
+<td title='testcases.ProgressBar_Test.compare_progress()'><b>compare_progress</b><br>Test class: testcases.ProgressBar_Test<br>Test method: Tract progress and compare to progress before starting</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProgressBar_Test@29fc1a2b</td></tr>
+<tr>
+<td title='testcases.Accordian_Test.heading3()'><b>heading3</b><br>Test class: testcases.Accordian_Test<br>Test method: Open heading3 and verify its text</td>
+<td></td>
+<td>0</td>
+<td>testcases.Accordian_Test@1bbae752</td></tr>
+<tr>
+<td title='testcases.ToolTips_Test.navigate_to_tooltips()'><b>navigate_to_tooltips</b><br>Test class: testcases.ToolTips_Test<br>Test method: Navigate to tooltips under Widgets</td>
+<td></td>
+<td>0</td>
+<td>testcases.ToolTips_Test@2571066a</td></tr>
+<tr>
+<td title='testcases.Accordian_Test.navigate_to_accordian()'><b>navigate_to_accordian</b><br>Test class: testcases.Accordian_Test<br>Test method: Navigate to widgets and then navigate to accordian under it</td>
+<td></td>
+<td>0</td>
+<td>testcases.Accordian_Test@1bbae752</td></tr>
+<tr>
+<td title='testcases.AutoComplete_Test.single_color_textbox()'><b>single_color_textbox</b><br>Test class: testcases.AutoComplete_Test<br>Test method: Enter name of one color in second auto complete textbox</td>
+<td></td>
+<td>0</td>
+<td>testcases.AutoComplete_Test@76075d65</td></tr>
+<tr>
+<td title='testcases.ProgressBar_Test.navigate_to_progressbar()'><b>navigate_to_progressbar</b><br>Test class: testcases.ProgressBar_Test<br>Test method: Navigate to ProgressBar under Widgets</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProgressBar_Test@29fc1a2b</td></tr>
+<tr>
+<td title='testcases.Accordian_Test.heading2()'><b>heading2</b><br>Test class: testcases.Accordian_Test<br>Test method: Open heading2 and verify its text</td>
+<td></td>
+<td>0</td>
+<td>testcases.Accordian_Test@1bbae752</td></tr>
+<tr>
+<td title='testcases.Tabs_Test.navigate_to_tabs()'><b>navigate_to_tabs</b><br>Test class: testcases.Tabs_Test<br>Test method: Navigate to Tabs under Widgets</td>
+<td></td>
+<td>0</td>
+<td>testcases.Tabs_Test@6c37bd27</td></tr>
+<tr>
+<td title='testcases.ProgressBar_Test.click_on_start()'><b>click_on_start</b><br>Test class: testcases.ProgressBar_Test<br>Test method: Click on start button</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProgressBar_Test@29fc1a2b</td></tr>
+<tr>
+<td title='testcases.AutoComplete_Test.multi_colors_textbox()'><b>multi_colors_textbox</b><br>Test class: testcases.AutoComplete_Test<br>Test method: Enter names of two colors in first auto complete textbox</td>
+<td></td>
+<td>0</td>
+<td>testcases.AutoComplete_Test@76075d65</td></tr>
+<tr>
+<td title='testcases.Slider_Test.verify_dragdrop_successful()'><b>verify_dragdrop_successful</b><br>Test class: testcases.Slider_Test<br>Test method: Verify if drag drop is successful</td>
+<td></td>
+<td>0</td>
+<td>testcases.Slider_Test@ccd1bc3</td></tr>
+<tr>
+<td title='testcases.Menu_Test.menu1()'><b>menu1</b><br>Test class: testcases.Menu_Test<br>Test method: Hover the curser over menu one</td>
+<td></td>
+<td>0</td>
+<td>testcases.Menu_Test@677b8e13</td></tr>
+<tr>
+<td title='testcases.ProgressBar_Test.click_on_stop()'><b>click_on_stop</b><br>Test class: testcases.ProgressBar_Test<br>Test method: Click on stop button</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProgressBar_Test@29fc1a2b</td></tr>
+<tr>
+<td title='testcases.Datepicker_Test.navigate_to_datepicker()'><b>navigate_to_datepicker</b><br>Test class: testcases.Datepicker_Test<br>Test method: Navigate to Datepicker under Widgets</td>
+<td></td>
+<td>0</td>
+<td>testcases.Datepicker_Test@383790cf</td></tr>
+<tr>
+<td title='testcases.Slider_Test.drag_drop_slider()'><b>drag_drop_slider</b><br>Test class: testcases.Slider_Test<br>Test method: Check slider location before dragging. drag the slider and check location after dragging.</td>
+<td></td>
+<td>0</td>
+<td>testcases.Slider_Test@ccd1bc3</td></tr>
+<tr>
+<td title='testcases.SelectMenu_Test.multi_select()'><b>multi_select</b><br>Test class: testcases.SelectMenu_Test<br>Test method: Select blue and black colors from  multi select dropdown</td>
+<td></td>
+<td>0</td>
+<td>testcases.SelectMenu_Test@57540fd0</td></tr>
+<tr>
+<td title='testcases.Slider_Test.navigate_to_slider()'><b>navigate_to_slider</b><br>Test class: testcases.Slider_Test<br>Test method: Navigate to Slider under Widgets</td>
+<td></td>
+<td>0</td>
+<td>testcases.Slider_Test@ccd1bc3</td></tr>
+<tr>
+<td title='testcases.Menu_Test.navigate_to_menu()'><b>navigate_to_menu</b><br>Test class: testcases.Menu_Test<br>Test method: Navigate to Menu under Widgets</td>
+<td></td>
+<td>0</td>
+<td>testcases.Menu_Test@677b8e13</td></tr>
+<tr>
+<td title='testcases.SelectMenu_Test.one_dropdown()'><b>one_dropdown</b><br>Test class: testcases.SelectMenu_Test<br>Test method: Select Ms. from one dropdown</td>
+<td></td>
+<td>0</td>
+<td>testcases.SelectMenu_Test@57540fd0</td></tr>
+<tr>
+<td title='testcases.Tabs_Test.switch_tabs()'><b>switch_tabs</b><br>Test class: testcases.Tabs_Test<br>Test method: Switch between the tabs</td>
+<td></td>
+<td>0</td>
+<td>testcases.Tabs_Test@6c37bd27</td></tr>
+<tr>
+<td title='testcases.Menu_Test.menu3()'><b>menu3</b><br>Test class: testcases.Menu_Test<br>Test method: Hover the curser over menu three</td>
+<td></td>
+<td>0</td>
+<td>testcases.Menu_Test@677b8e13</td></tr>
+<tr>
+<td title='testcases.SelectMenu_Test.standard_multiselect()'><b>standard_multiselect</b><br>Test class: testcases.SelectMenu_Test<br>Test method: Select Volvo and Audi from standard multi select dropdown</td>
+<td></td>
+<td>0</td>
+<td>testcases.SelectMenu_Test@57540fd0</td></tr>
+<tr>
+<td title='testcases.SelectMenu_Test.value_dropdown()'><b>value_dropdown</b><br>Test class: testcases.SelectMenu_Test<br>Test method: Select Group 2, option 1 from value dropdown </td>
+<td></td>
+<td>0</td>
+<td>testcases.SelectMenu_Test@57540fd0</td></tr>
+<tr>
+<td title='testcases.Menu_Test.menu2()'><b>menu2</b><br>Test class: testcases.Menu_Test<br>Test method: Hover the curser over menu two and it's options</td>
+<td></td>
+<td>0</td>
+<td>testcases.Menu_Test@677b8e13</td></tr>
+<tr>
+<td title='testcases.ProgressBar_Test.track_progress_before_start()'><b>track_progress_before_start</b><br>Test class: testcases.ProgressBar_Test<br>Test method: Verify progress before starting</td>
+<td></td>
+<td>0</td>
+<td>testcases.ProgressBar_Test@29fc1a2b</td></tr>
+<tr>
+<td title='testcases.Menu_Test.hover_over_submenu()'><b>hover_over_submenu</b><br>Test class: testcases.Menu_Test<br>Test method: Hover the curser over submenu of menu2 and submenu's options</td>
+<td></td>
+<td>0</td>
+<td>testcases.Menu_Test@677b8e13</td></tr>
+</table><p>
+</body>
+</html>

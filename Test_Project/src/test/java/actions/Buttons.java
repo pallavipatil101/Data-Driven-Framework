@@ -22,7 +22,6 @@ public class Buttons extends Base {
 	}
 	
 	public void verify_Double_Click() {
-		//scroll_to_element(bpl.dynamicClickMsg());
 		cu.verify_texts_equal("You have done a double click", bpl.doubleClickMsg());
 	}
 	

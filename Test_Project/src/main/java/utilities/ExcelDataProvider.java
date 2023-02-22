@@ -3,9 +3,7 @@ package utilities;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import base.Base;
-
-public class ExcelDataProvider extends Base{
+public class ExcelDataProvider{
 	
 	public static Object[][] testData(String path, String sheetName) {
 		
@@ -50,5 +48,6 @@ public class ExcelDataProvider extends Base{
 	public void test(String label, String value) {
 		System.out.println("==> "+value);
 	}
+	
 	
 }

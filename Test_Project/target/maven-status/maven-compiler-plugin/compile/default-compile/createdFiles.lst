@@ -1,6 +1,8 @@
 extent/reporter/ExtentReporter.class
 base/Base.class
 listener/Listeners.class
+utilities/DataProviderDP.class
 utilities/ExcelDataProvider.class
 utilities/ExcelReader.class
+listener/MyTransformer.class
 utilities/CommonUtilities.class

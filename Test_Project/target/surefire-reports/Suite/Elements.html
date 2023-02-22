@@ -1,0 +1,290 @@
+<html>
+<head>
+<title>TestNG:  Elements</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Elements</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>42/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 22 10:28:06 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>28 seconds (28927 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.Buttons_Test.navigateToButtons()'><b>navigateToButtons</b><br>Test class: testcases.Buttons_Test<br>Test method: Navigate to buttons under Elements</td>
+<td></td>
+<td>0</td>
+<td>testcases.Buttons_Test@5e840abf</td></tr>
+<tr>
+<td title='testcases.Checkbox_Test.navigate_to_checkbox()'><b>navigate_to_checkbox</b><br>Test class: testcases.Checkbox_Test<br>Test method: Navigate to checkbox under Elements</td>
+<td></td>
+<td>0</td>
+<td>testcases.Checkbox_Test@9a7a808</td></tr>
+<tr>
+<td title='testcases.Webtable_Test.edit_Row1()'><b>edit_Row1</b><br>Test class: testcases.Webtable_Test<br>Test method: Edit first row of table<br>Parameters: Salary, 11111</td>
+<td></td>
+<td>0</td>
+<td>testcases.Webtable_Test@13a37e2a</td></tr>
+<tr>
+<td title='testcases.UploadDownload_Test.navigateToButtons()'><b>navigateToButtons</b><br>Test class: testcases.UploadDownload_Test<br>Test method: Navigate to Upload-Download under Elements</td>
+<td></td>
+<td>0</td>
+<td>testcases.UploadDownload_Test@551de37d</td></tr>
+<tr>
+<td title='testcases.Webtable_Test.edit_Row1()'><b>edit_Row1</b><br>Test class: testcases.Webtable_Test<br>Test method: Edit first row of table<br>Parameters: Department, QA</td>
+<td></td>
+<td>0</td>
+<td>testcases.Webtable_Test@13a37e2a</td></tr>
+<tr>
+<td title='testcases.Buttons_Test.dynamicClick()'><b>dynamicClick</b><br>Test class: testcases.Buttons_Test<br>Test method: click the third button and verify if click is successful</td>
+<td></td>
+<td>0</td>
+<td>testcases.Buttons_Test@5e840abf</td></tr>
+<tr>
+<td title='testcases.Links_Test.navigateToLinks()'><b>navigateToLinks</b><br>Test class: testcases.Links_Test<br>Test method: Navigate to Links under Elements</td>
+<td></td>
+<td>0</td>
+<td>testcases.Links_Test@4fcc0416</td></tr>
+<tr>
+<td title='testcases.Buttons_Test.doubleClick()'><b>doubleClick</b><br>Test class: testcases.Buttons_Test<br>Test method: Double click the first button and verify if click is successful</td>
+<td></td>
+<td>0</td>
+<td>testcases.Buttons_Test@5e840abf</td></tr>
+<tr>
+<td title='testcases.BrokenLinks_Test.findBrokenLink()'><b>findBrokenLink</b><br>Test class: testcases.BrokenLinks_Test<br>Test method: Find broken link among two present links</td>
+<td></td>
+<td>3</td>
+<td>testcases.BrokenLinks_Test@5b5c0057</td></tr>
+<tr>
+<td title='testcases.Webtable_Test.edit_Row1()'><b>edit_Row1</b><br>Test class: testcases.Webtable_Test<br>Test method: Edit first row of table<br>Parameters: Email, pallavi.patil@joshsoftware.com</td>
+<td></td>
+<td>0</td>
+<td>testcases.Webtable_Test@13a37e2a</td></tr>
+<tr>
+<td title='testcases.Links_Test.clickLinks()'><b>clickLinks</b><br>Test class: testcases.Links_Test<br>Test method: Click the links and navigate back to original page</td>
+<td></td>
+<td>0</td>
+<td>testcases.Links_Test@4fcc0416</td></tr>
+<tr>
+<td title='testcases.Buttons_Test.rightClick()'><b>rightClick</b><br>Test class: testcases.Buttons_Test<br>Test method: Right click the second button and verify if click is successful</td>
+<td></td>
+<td>0</td>
+<td>testcases.Buttons_Test@5e840abf</td></tr>
+<tr>
+<td title='testcases.Textbox_Test.verify_entered_data()'><b>verify_entered_data</b><br>Test class: testcases.Textbox_Test<br>Test method: Verify data entered into textboxes</td>
+<td></td>
+<td>0</td>
+<td>testcases.Textbox_Test@2b97cc1f</td></tr>
+<tr>
+<td title='testcases.BrokenLinks_Test.navigate_to_BrokenLinks()'><b>navigate_to_BrokenLinks</b><br>Test class: testcases.BrokenLinks_Test<br>Test method: Navigate to broken links under Elements</td>
+<td></td>
+<td>0</td>
+<td>testcases.BrokenLinks_Test@5b5c0057</td></tr>
+<tr>
+<td title='testcases.Webtable_Test.edit_Row1()'><b>edit_Row1</b><br>Test class: testcases.Webtable_Test<br>Test method: Edit first row of table<br>Parameters: Age, 26</td>
+<td></td>
+<td>0</td>
+<td>testcases.Webtable_Test@13a37e2a</td></tr>
+<tr>
+<td title='testcases.Textbox_Test.enter_data()'><b>enter_data</b><br>Test class: testcases.Textbox_Test<br>Test method: Fill the textboxes<br>Parameters: Permanent Address, Miraj</td>
+<td></td>
+<td>0</td>
+<td>testcases.Textbox_Test@2b97cc1f</td></tr>
+<tr>
+<td title='testcases.DynamicProperties_Test.navigateToDynamicProperties()'><b>navigateToDynamicProperties</b><br>Test class: testcases.DynamicProperties_Test<br>Test method: Navigate to dynamic properties under Elements</td>
+<td></td>
+<td>0</td>
+<td>testcases.DynamicProperties_Test@33abde31</td></tr>
+<tr>
+<td title='testcases.RadioButton_Test.navigate_to_radio_button()'><b>navigate_to_radio_button</b><br>Test class: testcases.RadioButton_Test<br>Test method: Naviagate to Radio Buttons under Elements</td>
+<td></td>
+<td>0</td>
+<td>testcases.RadioButton_Test@1ded7b14</td></tr>
+<tr>
+<td title='testcases.RadioButton_Test.verifyDisabledRadio()'><b>verifyDisabledRadio</b><br>Test class: testcases.RadioButton_Test<br>Test method: Verify if disabled radio button is really disabled</td>
+<td></td>
+<td>0</td>
+<td>testcases.RadioButton_Test@1ded7b14</td></tr>
+<tr>
+<td title='testcases.Textbox_Test.click_submit()'><b>click_submit</b><br>Test class: testcases.Textbox_Test<br>Test method: Click on submit button</td>
+<td></td>
+<td>0</td>
+<td>testcases.Textbox_Test@2b97cc1f</td></tr>
+<tr>
+<td title='testcases.DynamicProperties_Test.verifyEnabledBtn()'><b>verifyEnabledBtn</b><br>Test class: testcases.DynamicProperties_Test<br>Test method: Verify if disabled button is enabled after 5 seconds</td>
+<td></td>
+<td>5</td>
+<td>testcases.DynamicProperties_Test@33abde31</td></tr>
+<tr>
+<td title='testcases.Webtable_Test.edit_Row1()'><b>edit_Row1</b><br>Test class: testcases.Webtable_Test<br>Test method: Edit first row of table<br>Parameters: First Name, Pallavi</td>
+<td></td>
+<td>0</td>
+<td>testcases.Webtable_Test@13a37e2a</td></tr>
+<tr>
+<td title='testcases.DynamicProperties_Test.verifyBtnColorChange()'><b>verifyBtnColorChange</b><br>Test class: testcases.DynamicProperties_Test<br>Test method: Verify if color-changing button changed its color after 5 seconds</td>
+<td></td>
+<td>0</td>
+<td>testcases.DynamicProperties_Test@33abde31</td></tr>
+<tr>
+<td title='testcases.RadioButton_Test.select_radio_button()'><b>select_radio_button</b><br>Test class: testcases.RadioButton_Test<br>Test method: Click on a radio button and verify if its selected</td>
+<td></td>
+<td>0</td>
+<td>testcases.RadioButton_Test@1ded7b14</td></tr>
+<tr>
+<td title='testcases.Webtable_Test.submit_Data()'><b>submit_Data</b><br>Test class: testcases.Webtable_Test<br>Test method: Submit edited table row</td>
+<td></td>
+<td>0</td>
+<td>testcases.Webtable_Test@13a37e2a</td></tr>
+<tr>
+<td title='testcases.Textbox_Test.navigate_to_textbox()'><b>navigate_to_textbox</b><br>Test class: testcases.Textbox_Test<br>Test method: Navigate to Elements and then to textbox</td>
+<td></td>
+<td>0</td>
+<td>testcases.Textbox_Test@2b97cc1f</td></tr>
+<tr>
+<td title='testcases.Textbox_Test.verify_labels()'><b>verify_labels</b><br>Test class: testcases.Textbox_Test<br>Test method: Verify labels of all textboxes</td>
+<td></td>
+<td>0</td>
+<td>testcases.Textbox_Test@2b97cc1f</td></tr>
+<tr>
+<td title='testcases.Webtable_Test.edit_Row1()'><b>edit_Row1</b><br>Test class: testcases.Webtable_Test<br>Test method: Edit first row of table<br>Parameters: Last Name, Patil</td>
+<td></td>
+<td>0</td>
+<td>testcases.Webtable_Test@13a37e2a</td></tr>
+<tr>
+<td title='testcases.BrokenLinks_Test.findBrokenImages()'><b>findBrokenImages</b><br>Test class: testcases.BrokenLinks_Test<br>Test method: Find broken image among two present images</td>
+<td></td>
+<td>0</td>
+<td>testcases.BrokenLinks_Test@5b5c0057</td></tr>
+<tr>
+<td title='testcases.Checkbox_Test.checkbox()'><b>checkbox</b><br>Test class: testcases.Checkbox_Test<br>Test method: Check the checkbox and verify if the action is successful</td>
+<td></td>
+<td>0</td>
+<td>testcases.Checkbox_Test@9a7a808</td></tr>
+<tr>
+<td title='testcases.Textbox_Test.enter_data()'><b>enter_data</b><br>Test class: testcases.Textbox_Test<br>Test method: Fill the textboxes<br>Parameters: Email, pallavi.patil@joshsoftware.com</td>
+<td></td>
+<td>0</td>
+<td>testcases.Textbox_Test@2b97cc1f</td></tr>
+<tr>
+<td title='testcases.Webtable_Test.navigate_to_webtable()'><b>navigate_to_webtable</b><br>Test class: testcases.Webtable_Test<br>Test method: Navigate to WebTable under Elements</td>
+<td></td>
+<td>0</td>
+<td>testcases.Webtable_Test@13a37e2a</td></tr>
+<tr>
+<td title='testcases.Webtable_Test.printRow1()'><b>printRow1</b><br>Test class: testcases.Webtable_Test<br>Test method: print the first row of table</td>
+<td></td>
+<td>0</td>
+<td>testcases.Webtable_Test@13a37e2a</td></tr>
+<tr>
+<td title='testcases.UploadDownload_Test.downloadFile()'><b>downloadFile</b><br>Test class: testcases.UploadDownload_Test<br>Test method: Download the file</td>
+<td></td>
+<td>0</td>
+<td>testcases.UploadDownload_Test@551de37d</td></tr>
+<tr>
+<td title='testcases.DynamicProperties_Test.buttonColorBefore()'><b>buttonColorBefore</b><br>Test class: testcases.DynamicProperties_Test<br>Test method: Verify color of color-changing button before the changes</td>
+<td></td>
+<td>0</td>
+<td>testcases.DynamicProperties_Test@33abde31</td></tr>
+<tr>
+<td title='testcases.Webtable_Test.verify_Edits_to_Row1()'><b>verify_Edits_to_Row1</b><br>Test class: testcases.Webtable_Test<br>Test method: Verify of edit is successful</td>
+<td></td>
+<td>0</td>
+<td>testcases.Webtable_Test@13a37e2a</td></tr>
+<tr>
+<td title='testcases.Textbox_Test.enter_data()'><b>enter_data</b><br>Test class: testcases.Textbox_Test<br>Test method: Fill the textboxes<br>Parameters: Current address, Pune</td>
+<td></td>
+<td>0</td>
+<td>testcases.Textbox_Test@2b97cc1f</td></tr>
+<tr>
+<td title='testcases.UploadDownload_Test.uploadFile()'><b>uploadFile</b><br>Test class: testcases.UploadDownload_Test<br>Test method: Upload a textfile</td>
+<td></td>
+<td>0</td>
+<td>testcases.UploadDownload_Test@551de37d</td></tr>
+<tr>
+<td title='testcases.Textbox_Test.verify_submitted_data()'><b>verify_submitted_data</b><br>Test class: testcases.Textbox_Test<br>Test method: Verify if data is submitted successfully</td>
+<td></td>
+<td>0</td>
+<td>testcases.Textbox_Test@2b97cc1f</td></tr>
+<tr>
+<td title='testcases.DynamicProperties_Test.verifyDisabledBtn()'><b>verifyDisabledBtn</b><br>Test class: testcases.DynamicProperties_Test<br>Test method: Verify if disabled button is really disabled</td>
+<td></td>
+<td>0</td>
+<td>testcases.DynamicProperties_Test@33abde31</td></tr>
+<tr>
+<td title='testcases.Textbox_Test.enter_data()'><b>enter_data</b><br>Test class: testcases.Textbox_Test<br>Test method: Fill the textboxes<br>Parameters: Name, Pallavi Patil</td>
+<td></td>
+<td>0</td>
+<td>testcases.Textbox_Test@2b97cc1f</td></tr>
+<tr>
+<td title='testcases.DynamicProperties_Test.verifyVisibilityOfInvisibleBtn()'><b>verifyVisibilityOfInvisibleBtn</b><br>Test class: testcases.DynamicProperties_Test<br>Test method: Verify if invisible button is viable after 5 seconds</td>
+<td></td>
+<td>0</td>
+<td>testcases.DynamicProperties_Test@33abde31</td></tr>
+</table><p>
+</body>
+</html>

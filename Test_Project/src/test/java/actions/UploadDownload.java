@@ -12,6 +12,10 @@ public class UploadDownload extends Base{
 		cu.send(upl.upload(), System.getProperty("user.dir")+"/src/test/resources/UploadFile.txt");
 	}
 	
+	public void verify_upload_successful() {
+		cu.isTrue(upl.uploadedFile().getText().contains("fakepath"));
+	}
+	
 	public void download() {
 		upl.download().click();
 	}

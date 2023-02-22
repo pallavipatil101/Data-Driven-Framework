@@ -50,41 +50,6 @@ public class PracticeForm extends Base{
 		cu.verify_texts_equal("Current Address", pfl.address_label() );
 	}
 	
-	/*public void enter_first_name(String label, String value) {
-		if(label.contains("First"))
-		{
-			send(pfl.firstName(), value);
-		}
-	}
-	
-	public void enter_last_name(String label, String value) {
-		if(label.contains("Last"))
-		{
-			send(pfl.lastName(), value);
-		}
-	}
-	
-	public void enter_email(String label, String value) {
-		if(label.contains("Email"))
-		{
-			send(pfl.email(), value);
-		}
-	}
-	
-	public void enter_mobile(String label, String value) {
-		if(label.contains("Mobile"))
-		{
-			send(pfl.mobile(), value);
-		}
-	}
-	
-	public void enter_address(String label, String value) {
-		if(label.contains("Address"))
-		{
-			send(pfl.address(), value);
-		}
-	}*/
-	
 	public void enter_first_name() {
 		cu.send(pfl.firstName(), e.getCellData("Form", "Values", 1));
 	}
@@ -94,10 +59,12 @@ public class PracticeForm extends Base{
 	}
 	
 	public void enter_email() {
+		cu.scroll_to_element(pfl.email());
 		cu.send(pfl.email(), e.getCellData("Form", "Values", 3));
 	}
 	
 	public void enter_mobile() {
+		cu.scroll_to_element(pfl.mobile());
 		cu.send(pfl.mobile(), e.getData("Form", "Values", 4));
 	}
 	
@@ -108,14 +75,14 @@ public class PracticeForm extends Base{
 	
 	
 	public void select_gender() {
-		for(WebElement g : pfl.genderRadio())
+		for(WebElement gender : pfl.genderRadio())
 		{
-			if(g.getAttribute("value").equals("Female"))
+			if(gender.getAttribute("value").equals("Female"))
 			{
-				if(!g.isSelected())
+				if(!gender.isSelected())
 				{
 					
-					cu.action().moveToElement(g).click().build().perform();
+					cu.action().moveToElement(gender).click().build().perform();
 				}
 			}
 		}
@@ -125,8 +92,7 @@ public class PracticeForm extends Base{
 		cu.scroll_to_element(pfl.address());
 		pfl.calender().click();
 		cu.select_Drop_Down(pfl.birthMonthDrop()).selectByVisibleText("March");
-		cu.select_Drop_Down(pfl.birthYearDrop()).selectByVisibleText("1996");
-		
+		cu.select_Drop_Down(pfl.birthYearDrop()).selectByVisibleText("1996");		
 		cu.action().moveToElement(pfl.birthDate()).click().build().perform();
 	}
 	
@@ -155,5 +121,50 @@ public class PracticeForm extends Base{
 		cu.action().moveToElement(pfl.maths()).click().build().perform();
 		cu.action().moveToElement(pfl.subject()).click().sendKeys("m").build().perform();
 		cu.action().moveToElement(pfl.chemistry()).click().build().perform();
+	}
+	
+	public void verify_entered_name() {
+		cu.isTrue(pfl.firstName().getText().equals("Pallavi"));
+		cu.isTrue(pfl.lastName().getText().equals("Patil"));
+	}
+	
+	public void verify_entered_email() {
+		cu.isTrue(pfl.email().getText().equals("pallavi.patil@joshsoftware.com"));
+	}
+	
+	public void verify_entered_mobile() {
+		cu.isTrue(pfl.mobile().getText().equals("7979797979"));
+	}
+	
+	public void verify_entered_address() {
+		cu.isTrue(pfl.address().getText().equals("Pune"));
+	}
+	
+	public void verify_selected_gender() {
+		for(WebElement gender : pfl.genderRadio())
+		{
+			if(gender.getAttribute("value").equals("Female"))
+			{
+				cu.isTrue(gender.isSelected());
+			}
+		}
+	}
+	
+	public void verify_selected_birthdate() {
+		cu.isTrue(pfl.calender().getText().equals("11 Mar 1996"));
+	}
+	
+	public void verify_selected_hobbies() {
+		for(WebElement hobby : pfl.hobbiesCheckbox())
+		{
+			if(hobby.getAttribute("value").equals("2")||hobby.getAttribute("value").equals("3"))
+			{
+				cu.isTrue(hobby.isSelected());
+			}
+		}
+	}
+	
+	public void verify_selected_subjects() {
+		cu.isTrue(pfl.subject().getText().contains("Maths"));
 	}
 }

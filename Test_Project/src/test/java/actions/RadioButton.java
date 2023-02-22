@@ -1,8 +1,7 @@
 package actions;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
+
 import base.Base;
 import locators.RadioButton_locators;
 import utilities.CommonUtilities;
@@ -10,7 +9,6 @@ import utilities.CommonUtilities;
 public class RadioButton extends Base{
 	CommonUtilities cu = new CommonUtilities();
 	RadioButton_locators rpl = new RadioButton_locators();
-	Logger log = LogManager.getLogger(RadioButton.class.getName());
 	
 	public void click_RadioButton() {
 		for(WebElement radio : rpl.radioButtonsList())
@@ -20,6 +18,7 @@ public class RadioButton extends Base{
 				if(!radio.isSelected())
 				{
 					radio.click();
+					cu.isTrue(radio.isSelected());
 				}
 			}
 		}
@@ -34,7 +33,6 @@ public class RadioButton extends Base{
 		{
 			if(radio.getAttribute("class").contains("disabled"))
 			{
-				log.info(radio.getAttribute("for")+" is disabled.");
 				System.out.println(radio.getAttribute("for")+" is disabled.");
 			}
 		}

@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>TestNG:  Interactions</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Interactions</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 22 10:29:42 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>30 seconds (30236 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.Droppable_Test.accept_tab_dragdrop()'><b>accept_tab_dragdrop</b><br>Test class: testcases.Droppable_Test<br>Test method: Drag-Drop both boxes to dropbox and verify which one is not accepted in dropbox</td>
+<td></td>
+<td>0</td>
+<td>testcases.Droppable_Test@1cbb3d3b</td></tr>
+<tr>
+<td title='testcases.Resizable_Test.resize_box_contained()'><b>resize_box_contained</b><br>Test class: testcases.Resizable_Test<br>Test method: Resize the webelement inside container</td>
+<td></td>
+<td>0</td>
+<td>testcases.Resizable_Test@5b22b970</td></tr>
+<tr>
+<td title='testcases.Droppable_Test.navigate_to_droppable()'><b>navigate_to_droppable</b><br>Test class: testcases.Droppable_Test<br>Test method: Navigate to droppable under Interactions</td>
+<td></td>
+<td>0</td>
+<td>testcases.Droppable_Test@1cbb3d3b</td></tr>
+<tr>
+<td title='testcases.Sortable_Test.navigate_to_sortable()'><b>navigate_to_sortable</b><br>Test class: testcases.Sortable_Test<br>Test method: Naviagate to Interactions and then naviagte to Sortable</td>
+<td></td>
+<td>0</td>
+<td>testcases.Sortable_Test@3b569985</td></tr>
+<tr>
+<td title='testcases.Draggable_Test.simple_drag()'><b>simple_drag</b><br>Test class: testcases.Draggable_Test<br>Test method: Drag the dragbox to any coordinates</td>
+<td></td>
+<td>0</td>
+<td>testcases.Draggable_Test@319854f0</td></tr>
+<tr>
+<td title='testcases.Resizable_Test.resize_page_contained()'><b>resize_page_contained</b><br>Test class: testcases.Resizable_Test<br>Test method: Resize the webelement on page</td>
+<td></td>
+<td>0</td>
+<td>testcases.Resizable_Test@5b22b970</td></tr>
+<tr>
+<td title='testcases.Selectable_Test.navigate_to_selectable()'><b>navigate_to_selectable</b><br>Test class: testcases.Selectable_Test<br>Test method: Naviagate to Selectable under Interactions</td>
+<td></td>
+<td>0</td>
+<td>testcases.Selectable_Test@3e48e859</td></tr>
+<tr>
+<td title='testcases.Draggable_Test.navigate_to_draggable()'><b>navigate_to_draggable</b><br>Test class: testcases.Draggable_Test<br>Test method: Navigate to draggable under Interactions</td>
+<td></td>
+<td>0</td>
+<td>testcases.Draggable_Test@319854f0</td></tr>
+<tr>
+<td title='testcases.Droppable_Test.revert_draggable_tab_dragdrop()'><b>revert_draggable_tab_dragdrop</b><br>Test class: testcases.Droppable_Test<br>Test method: Drag-drop both boxes to dropbox and verify if revertable box one gets reverted back to original position</td>
+<td></td>
+<td>0</td>
+<td>testcases.Droppable_Test@1cbb3d3b</td></tr>
+<tr>
+<td title='testcases.Draggable_Test.container_tab_dragdrop()'><b>container_tab_dragdrop</b><br>Test class: testcases.Draggable_Test<br>Test method: Drag the dragbox contained within a container and page</td>
+<td></td>
+<td>1</td>
+<td>testcases.Draggable_Test@319854f0</td></tr>
+<tr>
+<td title='testcases.Sortable_Test.list()'><b>list</b><br>Test class: testcases.Sortable_Test<br>Test method: Switch to list view and verify list elements</td>
+<td></td>
+<td>0</td>
+<td>testcases.Sortable_Test@3b569985</td></tr>
+<tr>
+<td title='testcases.Resizable_Test.navigate_to_resizable()'><b>navigate_to_resizable</b><br>Test class: testcases.Resizable_Test<br>Test method: Navigate to resizable under Interactions</td>
+<td></td>
+<td>0</td>
+<td>testcases.Resizable_Test@5b22b970</td></tr>
+<tr>
+<td title='testcases.Sortable_Test.grid()'><b>grid</b><br>Test class: testcases.Sortable_Test<br>Test method: Switch to grid view and verify grid elements</td>
+<td></td>
+<td>0</td>
+<td>testcases.Sortable_Test@3b569985</td></tr>
+<tr>
+<td title='testcases.Draggable_Test.axis_tab_dragdrop()'><b>axis_tab_dragdrop</b><br>Test class: testcases.Draggable_Test<br>Test method: Drag first box along x-axis & second box to y-axis </td>
+<td></td>
+<td>0</td>
+<td>testcases.Draggable_Test@319854f0</td></tr>
+<tr>
+<td title='testcases.Droppable_Test.prevent_propagation_tab_dragdrop()'><b>prevent_propagation_tab_dragdrop</b><br>Test class: testcases.Droppable_Test</td>
+<td></td>
+<td>0</td>
+<td>testcases.Droppable_Test@1cbb3d3b</td></tr>
+<tr>
+<td title='testcases.Droppable_Test.simple_drag_drop()'><b>simple_drag_drop</b><br>Test class: testcases.Droppable_Test<br>Test method: Drag-drop the dragbox to given dropbox</td>
+<td></td>
+<td>0</td>
+<td>testcases.Droppable_Test@1cbb3d3b</td></tr>
+<tr>
+<td title='testcases.Selectable_Test.select_all_list_options()'><b>select_all_list_options</b><br>Test class: testcases.Selectable_Test<br>Test method: Select all list options</td>
+<td></td>
+<td>0</td>
+<td>testcases.Selectable_Test@3e48e859</td></tr>
+<tr>
+<td title='testcases.Selectable_Test.switch_to_grid()'><b>switch_to_grid</b><br>Test class: testcases.Selectable_Test<br>Test method: Switch to grid & select all grid options</td>
+<td></td>
+<td>0</td>
+<td>testcases.Selectable_Test@3e48e859</td></tr>
+</table><p>
+</body>
+</html>

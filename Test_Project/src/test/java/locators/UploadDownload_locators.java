@@ -14,4 +14,8 @@ public class UploadDownload_locators extends Base {
 	public WebElement download() {
 		return driver.findElement(By.id("downloadButton"));
 	}
+	
+	public WebElement uploadedFile() {
+		return driver.findElement(By.id("uploadedFilePath"));
+	}
 }

@@ -9,10 +9,12 @@ public class AutoComplete_locators extends Base {
 	
 	public WebElement singleColor() {
 		return driver.findElement(By.xpath("//*[@id='autoCompleteSingleContainer']/div/div[1]"));
+		//return driver.findElement(By.xpath("//*[@class = 'auto-complete__value-container css-1hwfws3']"));
 	}
 	
 	public WebElement multipleColors() {
 		return driver.findElement(By.xpath("//*[@id='autoCompleteMultipleContainer']/div/div[1]"));
+		//return driver.findElement(By.xpath("//*[@class = 'auto-complete__value-container auto-complete__value-container--is-multi css-1hwfws3']"));
 	}
 	
 	public WebElement frame() {

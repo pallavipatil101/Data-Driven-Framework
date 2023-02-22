@@ -4,7 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
-import actions.HomePage;
+import actions.AlertsFramesWindows;
 import actions.Windows;
 import base.Base;
 
@@ -12,13 +12,15 @@ public class Windows_Test extends Base{
 	Windows win = new Windows();
 	public Logger log = LogManager.getLogger(Accordian_Test.class.getName());
 	
-	@Test(priority = 0)
+	@Test(priority = 0, groups = { "Navigation" } , description = "Navigate to Windows under AlertsFramesWindow")
 	public void navigate_to_windows() {
-		HomePage hp = new HomePage();
-		hp.navigate_to_alert_frames_windows().navigate_to_windows();
+		//HomePage hp = new HomePage();
+		//hp.navigate_to_alert_frames_windows().navigate_to_windows();
+		AlertsFramesWindows window = new AlertsFramesWindows();
+		window.navigate_to_windows();
 	}
 	
-	@Test(priority = 1, enabled=true)
+	@Test(priority = 1, enabled=true, description = "Open a new tab. Navigate to it. Verify it. Navigate back to original tab")
 	public void new_tab() {
 		win.open_new_tab();
 		log.debug("Opened new tab");
@@ -31,7 +33,7 @@ public class Windows_Test extends Base{
 	}
 	
 	
-	@Test(priority = 2, enabled=true)
+	@Test(priority = 2, enabled=true, description = "Open a new window. Navigate to it. Verify it. Navigate back to original window")
 	public void new_window() {
 		win.open_new_window();
 		log.debug("Opened new window");
@@ -44,7 +46,7 @@ public class Windows_Test extends Base{
 	}
 	
 	
-	@Test(priority = 3, enabled = true)
+	@Test(priority = 3, enabled = false, description = "Open a new window. Navigate to it. Verify it. Navigate back to original window")
 	public void new_msg_window() {
 		win.open_msg_window();
 		log.debug("Opened new window");

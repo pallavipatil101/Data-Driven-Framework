@@ -63,6 +63,7 @@ testcases/Slider_Test.class
 actions/Draggable.class
 actions/Elements.class
 actions/Droppable.class
+actions/LeftPanel.class
 testcases/Modals_Test.class
 actions/AutoComplete.class
 testcases/Selectable_Test.class
@@ -80,6 +81,7 @@ testcases/Links_Test.class
 testcases/ProgressBar_Test.class
 locators/Selectable_locators.class
 locators/Elements_page_locators.class
+locators/LeftPanelLocators.class
 actions/Widgets.class
 testcases/Textbox_Test.class
 locators/Accordian_locators.class

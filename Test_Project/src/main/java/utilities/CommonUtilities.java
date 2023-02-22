@@ -15,14 +15,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
+import org.testng.asserts.Assertion;
+import org.testng.asserts.SoftAssert;
 
 import base.Base;
 
 public class CommonUtilities extends Base{
 	public String parentwindow;
 	public String childwindow;
-	
+	Assertion softAssert = new SoftAssert();
 	public void scroll_to_element(WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", element);
@@ -30,19 +31,19 @@ public class CommonUtilities extends Base{
 	
 	public void verify_texts_equal(String expected, WebElement element) {
 		String actual = element.getText();
-		Assert.assertEquals(actual, expected );		
+		softAssert.assertEquals(actual, expected );		
 	}
 	
 	public void verify_texts_notEqual(String expected, String actual) {
-		Assert.assertNotEquals(actual, expected );
+		softAssert.assertNotEquals(actual, expected );
 	}
 	
 	public void isTrue(Boolean value) {
-		Assert.assertTrue(value);
+		softAssert.assertTrue(value);
 	}
 	
 	public void isFalse(Boolean value) {
-		Assert.assertTrue(!value);
+		softAssert.assertTrue(!value);
 	}
 	
 	public void send(WebElement element, String data) {

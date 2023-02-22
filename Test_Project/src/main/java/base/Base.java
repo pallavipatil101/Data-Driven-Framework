@@ -3,6 +3,7 @@ package base;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Properties;
@@ -12,8 +13,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 public class Base {
 
@@ -22,8 +23,8 @@ public class Base {
 	public String childwindow;
 	public Properties pro;
 	
-	//@BeforeSuite
-	@BeforeClass
+	@BeforeTest
+	//@BeforeClass
 	public void setup() throws IOException {
 		pro = new Properties();
 		String path = System.getProperty("user.dir")+"/src/main/resources/Config.properties";
@@ -37,12 +38,17 @@ public class Base {
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/Drivers/chromedriver");
 
 			String downloadPath = System.getProperty("user.dir")+"/DownloadedFiles";
+			//Setting download path to the project download folder
 			HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 			chromePrefs.put("profile.default_content_settings.popups", 0);
 			chromePrefs.put("download.default_directory", downloadPath);
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.setExperimentalOption("prefs", chromePrefs);
-			driver = new ChromeDriver(chromeOptions);
+			
+			//Block pop-ups
+			chromeOptions.setExperimentalOption("excludeSwitches",Arrays.asList("disable-popup-blocking"));
+			
+			driver = new ChromeDriver(chromeOptions);		
 		}
 		
 		else if (browserName.equalsIgnoreCase("firefox")) 
@@ -65,8 +71,8 @@ public class Base {
 		childwindow = iterator.next();
 	}
 	
-	//@AfterSuite
-	@AfterClass
+	@AfterTest
+	//@AfterClass
 	public void teardown() {
 		driver.quit();
 	}

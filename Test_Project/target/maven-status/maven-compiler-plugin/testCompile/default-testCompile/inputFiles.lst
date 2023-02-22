@@ -25,6 +25,7 @@
 /home/josh/eclipse-workspace/Test_Project/src/test/java/actions/Elements.java
 /home/josh/eclipse-workspace/Test_Project/src/test/java/testcases/Droppable_Test.java
 /home/josh/eclipse-workspace/Test_Project/src/test/java/actions/Buttons.java
+/home/josh/eclipse-workspace/Test_Project/src/test/java/actions/LeftPanel.java
 /home/josh/eclipse-workspace/Test_Project/src/test/java/actions/BrokenLinks.java
 /home/josh/eclipse-workspace/Test_Project/src/test/java/actions/AlertsFramesWindows.java
 /home/josh/eclipse-workspace/Test_Project/src/test/java/locators/Forms_page_locators.java
@@ -57,6 +58,7 @@
 /home/josh/eclipse-workspace/Test_Project/src/test/java/testcases/Menu_Test.java
 /home/josh/eclipse-workspace/Test_Project/src/test/java/testcases/Sortable_Test.java
 /home/josh/eclipse-workspace/Test_Project/src/test/java/locators/TextBox_locators.java
+/home/josh/eclipse-workspace/Test_Project/src/test/java/locators/LeftPanelLocators.java
 /home/josh/eclipse-workspace/Test_Project/src/test/java/actions/NestedFrames.java
 /home/josh/eclipse-workspace/Test_Project/src/test/java/testcases/AutoComplete_Test.java
 /home/josh/eclipse-workspace/Test_Project/src/test/java/testcases/BrokenLinks_Test.java

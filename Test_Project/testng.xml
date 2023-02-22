@@ -1,41 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+	
 	<listeners>
-	 	<listener class-name="listener.Listeners" />
-  	</listeners>
-  	
-  <test name="DemoQA">
-    <classes>
-      <class name="testcases.Textbox_Test"/>
-      <class name="testcases.Checkbox_Test"/>
-      <class name="testcases.RadioButton_Test"/>
-      <class name="testcases.Webtable_Test"/>
-      <class name="testcases.Buttons_Test"/>
-      <class name="testcases.Links_Test"/>
-      <class name="testcases.BrokenLinks_Test"/>
-      <class name="testcases.UploadDownload_Test"/>
-      <class name="testcases.DynamicProperties_Test"/>
-      <class name="testcases.PracticeForm_Test"/>
-      <class name="testcases.Alerts_Test"/>
-      <class name="testcases.Frames_Test"/>
-      <class name="testcases.NestedFrames_Test"/>
-      <class name="testcases.Modals_Test"/>
-      <class name="testcases.Accordian_Test"/>
-      <class name="testcases.AutoComplete_Test"/>
-      <class name="testcases.Datepicker_Test"/>
-      <class name="testcases.Slider_Test"/>
-      <class name="testcases.ProgressBar_Test"/>
-      <class name="testcases.Tabs_Test"/>
-      <class name="testcases.ToolTips_Test"/>
-      <class name="testcases.Menu_Test"/>
-      <class name="testcases.SelectMenu_Test"/>
-      <class name="testcases.Sortable_Test"/>
-      <class name="testcases.Selectable_Test"/>
-      <class name="testcases.Resizable_Test"/>
-      <class name="testcases.Droppable_Test"/>
-      <class name="testcases.Draggable_Test"/>
-      <class name="testcases.Windows_Test"/>
-    </classes>
-  </test> 
-</suite> 
+		<listener class-name="listener.Listeners" />
+		<listener class-name="listener.MyTransformer" />
+	</listeners>
+	
+	<test name="Elements">
+		<classes>
+			<class name="testcases.Textbox_Test" />
+			<class name="testcases.Checkbox_Test" />
+			<class name="testcases.RadioButton_Test" />
+			<class name="testcases.Textbox_Test" />
+			<class name="testcases.Checkbox_Test" />
+			<class name="testcases.RadioButton_Test" />
+			<class name="testcases.Webtable_Test" />
+			<class name="testcases.Buttons_Test" />
+			<class name="testcases.Links_Test" />
+			<class name="testcases.BrokenLinks_Test" />
+			<class name="testcases.UploadDownload_Test" />
+			<class name="testcases.DynamicProperties_Test" />
+		</classes>
+	</test>
+	<test name="Form">
+		<classes>
+			<class name="testcases.PracticeForm_Test" />
+		</classes>
+	</test>
+	<test name="Alerts">
+		<classes>
+			<class name="testcases.Alerts_Test" />
+			<class name="testcases.Frames_Test" />
+			<class name="testcases.NestedFrames_Test" />
+			<class name="testcases.Modals_Test" />
+			<class name="testcases.Windows_Test" />
+		</classes>
+	</test>
+	<test name="Widgets">
+		<classes>
+			<class name="testcases.Accordian_Test" />
+			<class name="testcases.AutoComplete_Test" />
+			<class name="testcases.Datepicker_Test" />
+			<class name="testcases.Slider_Test" />
+			<class name="testcases.ProgressBar_Test" />
+			<class name="testcases.Tabs_Test" />
+			<class name="testcases.ToolTips_Test" />
+			<class name="testcases.Menu_Test" />
+			<class name="testcases.SelectMenu_Test" />
+		</classes>
+	</test>
+	<test name="Interactions">
+		<classes>
+			<class name="testcases.Sortable_Test" />
+			<class name="testcases.Selectable_Test" />
+			<class name="testcases.Resizable_Test" />
+			<class name="testcases.Droppable_Test" />
+			<class name="testcases.Draggable_Test" />
+		</classes>
+	</test>
+</suite>

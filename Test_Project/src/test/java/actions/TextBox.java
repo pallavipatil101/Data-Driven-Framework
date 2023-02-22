@@ -54,6 +54,21 @@ public class TextBox extends Base{
 		}
 	}
 	
+	public void verify_name_entered_successfully() {
+		cu.verify_texts_equal("Pallavi Patil", tpl.userName());
+	}
+	
+	public void verify_email_entered_successfully() {
+		cu.verify_texts_equal("pallavi.patil@joshsoftware.com", tpl.userEmail());
+	}
+
+	public void verify_address1_entered_successfully() {
+		cu.verify_texts_equal("Pune", tpl.currentAddress());
+	}
+
+	public void verify_address2_entered_successfully() {
+		cu.verify_texts_equal("Miraj", tpl.permanentAddress());
+	}
 	
 	public void click_Submit_Btn() {
 		cu.scroll_to_element(tpl.submitBtn());

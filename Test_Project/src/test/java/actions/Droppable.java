@@ -34,7 +34,6 @@ public class Droppable extends Base{
 	}
 	
 	public void not_acceptable_drop() {
-		//scroll_to_element(drop.droppableAccept());
 		cu.verify_texts_equal("Drop here", drop.droppedMessageAccept());
 		cu.action().dragAndDrop(drop.draggableNotAcceptable(), drop.droppableAccept()).build().perform();
 	}

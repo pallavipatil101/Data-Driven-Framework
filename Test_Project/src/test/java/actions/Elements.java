@@ -2,15 +2,16 @@ package actions;
 
 import base.Base;
 import locators.Elements_page_locators;
+import locators.LeftPanel_Locators;
 import utilities.CommonUtilities;
 
 public class Elements extends Base{
 	
 	Elements_page_locators epl = new Elements_page_locators();
 	CommonUtilities cu = new CommonUtilities();
+	LeftPanel_Locators leftPanel = new  LeftPanel_Locators();
 
 	public TextBox navigate_to_textBox() {
-//		scroll_to_element(null);
 		epl.get_textBox().click();
 		return new TextBox();
 	}

@@ -11,6 +11,7 @@ public class CheckBox_locators extends Base{
 	}
 	
 	public WebElement chechbox_Result() {
-		return driver.findElement(By.xpath("//*[@id=\"result\"]/span[1]"));
+		//return driver.findElement(By.xpath("//*[@id='result']/span[1]"));
+		return driver.findElement(By.id("result"));
 		}
 }

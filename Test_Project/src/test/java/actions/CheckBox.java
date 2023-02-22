@@ -16,6 +16,7 @@ public class CheckBox extends Base{
 	}
 	
 	public void verify_Selected_CheckBox() {
-		cu.verify_texts_equal("You have selected :", cpl.chechbox_Result());
+		cu.isTrue(cpl.checkbox().isSelected());
+		cu.isTrue(cpl.chechbox_Result().getText().contains("You have selected :"));
 	}
 }

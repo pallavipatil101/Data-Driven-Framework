@@ -1,5 +1,7 @@
 package actions;
 
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
 import base.Base;
 import locators.AlertsFramesWindows_page_locators;
 import utilities.CommonUtilities;
@@ -9,6 +11,7 @@ public class AlertsFramesWindows extends Base{
 	CommonUtilities cu = new CommonUtilities();
 	
 	public Windows navigate_to_windows() {
+		cu.waiting().until(ExpectedConditions.elementToBeClickable(afw.windows()));
 		cu.scroll_to_element(afw.windows());
 		afw.windows().click();
 		return new Windows();
